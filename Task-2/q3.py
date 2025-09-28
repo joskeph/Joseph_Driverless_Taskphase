@@ -23,10 +23,11 @@ def doHash(l):
             else:
                 high = mid - 1
         
+
+        
         hashedList[key].insert(low, i)
             
     return hashedList
-
 print(doHash(L))
 
 
