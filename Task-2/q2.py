@@ -3,15 +3,18 @@
 
 n=int(input("Enter number of elements: "))
 L=[]
+
+
 for i in range(n):
     L.append(int(input("Enter value:")))
 
 
 def doHash(l):
-    hashedList=[[]for _ in range(10)]
+    hashedList=[[]for _ in range(2)]
     for i in l:
         key= i%10
-        hashedList[key].append(i)
+        if key<2:
+            hashedList[key].append(i)
 
     return hashedList
 
@@ -26,12 +29,7 @@ print(doHash(L))
 # size = 10
 
 # class Hashing():
-#     def __init__(self):
-#         self.size = 10
-#         self.hashTable = [[]]*10
-#     def hashing(self,list):
-#         n=len(list)
-#         for i in range(n):
+#     def __init__(sel
 #             hV=list[i]%10
 #             self.hashTable[hV].append(list[i])
         

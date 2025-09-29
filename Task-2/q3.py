@@ -9,23 +9,23 @@ for i in range(n):
 
 
 def doHash(l):
-    hashedList = [[] for _ in range(10)]
+    hashedList = [[] for _ in range(2)]
     for i in l:
-        key = i % 10
+        k = i % 10
+        if k<2:
+            l = 0
+            h = len(hashedList[k]) - 1
 
-        low = 0
-        high = len(hashedList[key]) - 1
+            while l <= h:
+                mid = (l + h) // 2
+                if hashedList[k][mid] < i:
+                    l = mid + 1
+                else:
+                    h = mid - 1
+            
 
-        while low <= high:
-            mid = (low + high) // 2
-            if hashedList[key][mid] < i:
-                low = mid + 1
-            else:
-                high = mid - 1
-        
-
-        
-        hashedList[key].insert(low, i)
+            
+            hashedList[k].insert(l, i)
             
     return hashedList
 print(doHash(L))

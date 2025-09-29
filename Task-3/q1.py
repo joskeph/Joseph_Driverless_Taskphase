@@ -37,6 +37,6 @@ for i in range(N):
     L.append(t)
 ref=[]
 ref.append(int(input("Reference point X:")))
-ref.append(int(input("Reference point Y:")))
+ref.append(int(input("regernce point y:")))
 
 print(Sort(L,ref))
