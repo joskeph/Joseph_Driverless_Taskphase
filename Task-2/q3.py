@@ -21,7 +21,7 @@ def doHash(l):
                 if hashedList[k][mid] < i:
                     l = mid + 1
                 else:
-                    h = mid - 1
+                    h = mid - 1 
             
 
             
