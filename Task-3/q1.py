@@ -5,7 +5,7 @@
 
 # P(l,ref)
 #l[[],[]] #ref[,]
-import math
+import math 
 
 def distance(x,y,p,q):
     return math.sqrt((x-p)**2+(y-q)**2)
