@@ -1,10 +1,4 @@
-# Let (x,y) represent coordinate of a point in a 2-D space. Assume that you are given a list that contains coordinates in it. Create a sort function to sort the coordinates of the based on proximity to a reference point that is not there in the input list. This reference point is to be given by the user. Output the sorted list using the sort function.
-# Eg : Coordinate List : [(0,1) , (0,3) , (1,2)]
-# Reference Point : (0,0)
-# Output : [(0,1) , (1,2) , (0,3)]
 
-# P(l,ref)
-#l[[],[]] #ref[,]
 import math 
 
 def distance(x,y,p,q):

@@ -1,9 +1,3 @@
-# Q2
-# Consider a CSV file (names.csv) containing a number and a name separated by a comma.
-# • Sort the rows of the file by the number field.
-# • Modify the file by removing odd rows.
-# • Store all the names in a string, trim the spaces, and find the minimum absolute ASCII difference in the string.
-
 import csv
 
 F=open("names.csv","w",newline='')
